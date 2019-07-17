@@ -52,7 +52,7 @@ Q|q) quit=y;;
   sleep 1
 esac
 
-############declare & Recursion Function
+#############declare & Recursion Function
 status(){
 	 SERVICE='httpd'
 if ps ax | grep -v grep | grep $SERVICE > /dev/null
@@ -67,14 +67,14 @@ else
 fi 
 }
 
-############Stop Service
+############ Stop Service
 stop(){
 	service httpd stop
 	tput cup 5 50
 	sleep 3
 }
 
-############Start Service
+############ Start Service
 start(){
 	service httpd start
 	tput cup 5 50
@@ -86,3 +86,4 @@ tput cup 5 55
 echo "Thank you, See you again ^^"
 sleep 3
 tput clear
+######end code 
